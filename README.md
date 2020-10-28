@@ -9,23 +9,6 @@ It cannot take action, all it can do is give people information with the hope th
 With all good hope, we wish that it can make some difference and avoid something unwanted from happening.
 
 
-make a formatting file which formats data into the requisite input
-use .get for retrieving data in dictionary as it will automatically give none for isolated node groups
-use database for retrieving data and make UI with image of a map with ID card photo of student.
-
-This program does not have an autonomous input system and is heavily biased on user data, witht the hope that they will enter data accurate to the best of thir information.
-This takes equiweighted variables for all people based on rough estimates or measures of central tendency of huge datasets from various sources of information.
-incubation period=3 days transfer chance will be based on relationship.
-Run master code everytime there is even the smallest mapping update...if too much then run on every few updates.
-Have a quarantine status,given to people above critical value.
-critical value>safe value. all these values will be exponentially decreasing.
-check all first degree connection of each node and suggest them people they should distance from if they are above safe calue and also suggest them who they pose a risk to if they are above safe value.
-they can press a distance option if they have started distancing from the required person.
-weight of the graph will be the one on one tranfer chance ....whose value depends on relationship.
-option for committing that you have come in close contact with someone and how close they are.
-on that basis, only student will be quarantined as they are second degree and others will be just high risk.
-give daily update on who is high risk.
-
 
 # Objective
 
