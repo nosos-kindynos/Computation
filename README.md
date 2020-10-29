@@ -1,4 +1,10 @@
-# Disease-Risk-Estimation
+# Preview
+
+This project is completely open source and we look forward to considering your suggestions about any error we might have overlooked or any logical fallacy we might have not been able to figure out , or even a scope for improvement as a user's actions and judgements concerning their own safety might use these statistics as a dominant parameter and giving them inaccurate results might lead to a compromise of their safety , contradicting the whole intention of this project.
+
+
+# Disease Risk Estimation
+
 Risk estimation by modelling disease transmission dynamics through user updated social interactions
 
 This program is designed for estimating risks based on social connections assumming relatively simple and idealistically equiweighted one to one transmission dynamics with the hope that the necessarry protocols (hygiende,social distancing, wearing surgical face masks,etc.) are being followed and may not be able capable to track large social gatherings or physical contacts where transmission dynamics get chaotic , making parameters assumed insignificant here dominant enough to produce a significantly different result ,  thus require more advanced and sophesticated methods.
