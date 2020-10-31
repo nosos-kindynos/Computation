@@ -30,7 +30,7 @@ To find the risk of a node from multiple sources given a probability mapping
 
 Find all possible paths between all given sources and target(node) in a given mapping by finding all possible paths between one source and target considering a mapping without all the other sources and repeating for all the sources, logging the paths in each case.
 
-Calculate probability from probability mapping by an intersection of all edges of a path and then a union of all induvidual paths from all sources.
+Calculate probability from probability mapping by a set intersection of all edges in a path and then a set union of all induvidual paths from all sources , where the final expression is evaluated treaating the intersection as multiplication.
 
 
 
