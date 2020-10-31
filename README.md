@@ -40,7 +40,7 @@ Calculate probability from probability mapping by an intersection of all edges o
         
         
         
-        function find_all_possible_paths(source,target,mapping):
+        function find_all_possible_paths (source,target,mapping) :
 
             while all first degree connections of source have not been explored
 
@@ -67,29 +67,29 @@ Calculate probability from probability mapping by an intersection of all edges o
 
          
          
-         function calculate_risk(target,risk_mapping):
+         function calculate_risk (target,risk_mapping) :
             
             for source in sources
                 relative_mapping = mapping without all the other sources
                 log find_all_possible_paths(source,target,relative_mapping) in paths
 
-            for i from 1 to ( total number of paths):
+            for i from 1 to (total number of paths) :
 
-                combo = all i path combinations of paths
-                intersection = product of risks of all distinct values of combo from risk_mapping
+                combinations = all i path combinations of paths
+                intersection = summation of the products of transfer chance of all distinct edges
 
                 if i is odd
                     add intersection to risk
                 else
-                    subtract subtract intersection from risk
+                    subtract intersection from risk
 
 
              return risk
 
 
-Time Complexity: n*(2^n)
+Time Complexity: summation i from 1 to n ip nci (assumming one cycle to be a primary binary operation)
 
-
+Note: For running in current computers relevant approximation may be made to get output in a considerable time.
 
 
 
