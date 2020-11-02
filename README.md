@@ -2,7 +2,7 @@
 
 This project is completely open source and we look forward to considering your suggestions about any error we might have overlooked or any logical fallacy we might have not been able to figure out , or even a scope for improvement as a user's actions and judgements concerning their own safety might use these statistics as a dominant parameter and giving them inaccurate results might lead to a compromise of their safety , contradicting the whole intention of this project.
 
-This project is just a prototype and has not been designed to fully  be put to mass use , but rather to just convey an idea , which we hope can provide an incentive to people in the development of further ideas thus progressing society as a whole.
+This project is just a prototype and has not been designed to fully  be put to mass use , but rather to just convey an idea , which we hope can provide an incentive in the development of further ideas thus progressing society as a whole.
 
 
 # Disease Risk Estimation
