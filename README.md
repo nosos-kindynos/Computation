@@ -36,7 +36,7 @@ Calculate probability from probability mapping by a set intersection of all edge
 
 # Pseudocode:
 
-    function estimate_risk(sources ,target,mapping,risk_mapping):
+    function estimate_risk (sources,target,mapping,risk_mapping) :
         
         
         
