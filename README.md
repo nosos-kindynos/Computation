@@ -73,7 +73,7 @@ Calculate probability from probability mapping by a set intersection of all edge
 Time Complexity: summation i from 1 to n ip nci (assumming one cycle to be a primary binary operation)
 
 # Note: 
-For running in current computers relevant approximations may be needed to achieve an output in a considerable time , which may depend on the processing speed of the computer
+For running in current computers relevant approximations may be needed to achieve an output in a considerable time , which may vary depending on the processing speed of the computer
 
 The probability may be calculated by taking into account not all the paths but the relatively dominant paths ,  which can be ranked on an estimate based on the degree of connection, thus a constraint which holds the backtrack variable True if a path lenth overshoots the input parameter while exploring may be added to the 
 find_all_possible_paths function in the above pseudocode.
