@@ -35,9 +35,11 @@ Calculate probability from probability mapping by a set intersection of all edge
                     else
                         backtrack=False
                         log vertex to path
-                        log vertex as an exploration of current
-                        current=vertex
                         break from for loop
+                        
+                        
+                    current=vertex
+                    log vertex as an exploration of current
 
                 if backtrack is True
                     erase current from path
