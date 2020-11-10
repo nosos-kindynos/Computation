@@ -25,7 +25,7 @@ Calculate probability from probability mapping by a set intersection of all edge
         
         function find_all_possible_paths (source,target,mapping) :
 
-            while all first degree connections of source have not been explored
+            while all first degree connections of source have not been explored or current is not source:
 
                 backtrack=True
                 for vertex = all unexplored first degree connections of current
