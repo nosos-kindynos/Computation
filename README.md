@@ -1,14 +1,14 @@
 
 
 
-# Objective
+# Objective:
 
 To find the risk of a node from multiple sources given a probability mapping
  
 
 
 
-# Algorithmic Flow:
+# Algorithm:
 
 
 Find all possible paths between all given source vertices and target vertex in a given mapping by finding all possible paths between one source and target considering a mapping without all the other sources and repeating for all the sources. All possible paths can be found by traversing the mapping by progressing from vertex to vertex and only removing the vertex from the path and backtracking to the previous one, if the vertex has already been visited in the current path, while putting a small constraint that if it happens to come across the target while traversing the mapping, it logs in the current path while treating the target as a visited vertex.
