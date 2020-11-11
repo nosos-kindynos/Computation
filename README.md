@@ -11,7 +11,7 @@ To find the risk of a node from multiple sources given a probability mapping
 # Algorithmic Flow:
 
 
-Find all possible paths between all given sources and target(node) in a given mapping by finding all possible paths between one source and target considering a mapping without all the other sources and repeating for all the sources, logging the paths in each case.
+Find all possible paths between all given source vertices and target vertex in a given mapping by finding all possible paths between one source and target considering a mapping without all the other sources and repeating for all the sources. All possible paths can be found by traversing the mapping by progressing from vertex to vertex and only removing the vertex from the path and backtracking to the previous one, if the vertex has already been visited in the current path, while putting a small constraint that if it happens to come across the target while traversing the mapping, it logs in the current path while treating the target as a visited vertex.
 
 Calculate probability from probability mapping by a set intersection of all edges in a path and then a set union of all induvidual paths from all sources , where the final expression is evaluated treaating the intersection as multiplication.
 
