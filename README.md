@@ -24,8 +24,10 @@ Calculate probability from probability mapping by a set intersection of all edge
         
         
         function find_all_possible_paths (source,target,mapping) :
-
-            while all first degree connections of source have not been explored or current is not source:
+            
+            log source to path
+            
+            while path is not empty :
 
                 backtrack=True
                 for vertex = all unexplored first degree connections of current
@@ -35,8 +37,8 @@ Calculate probability from probability mapping by a set intersection of all edge
                     else
                         backtrack=False
                         log vertex to path
-                        current=vertex
                         log vertex as an exploration of current
+                        current=vertex
                         
                         break from for loop
                         
@@ -44,7 +46,8 @@ Calculate probability from probability mapping by a set intersection of all edge
                 if backtrack is True
                     erase current from path
                     erase all explorations of current
-                    backtrack current to its predecessor from path
+                    backtrack current to its predecessor from path if path is not empty
+                    
 
             return all_possible_paths
 
