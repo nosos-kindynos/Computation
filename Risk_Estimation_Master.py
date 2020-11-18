@@ -126,13 +126,16 @@ def estimate_risk(sources, target, mapping, risk_mapping,accuracy):
             if backtrack==True:
                 path.remove(current)
                 visited.update({current:[]})
-                current=path[-1]
+                
+                if path!=[]:
+                    current=path[-1]
+                else:
+                    break
             else:
                 current = vertex
             
             
-            if current==source and eq( visited.get(source),mapping.get(source) ):
-                break
+ 
             
         return(paths)
 
