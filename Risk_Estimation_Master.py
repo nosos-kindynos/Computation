@@ -105,9 +105,11 @@ def estimate_risk(sources, target, mapping, risk_mapping,accuracy):
         current=source
         while True:
             
+            just_visited=[]
             backtrack=True
+            
             for vertex in mapping[current]:
-                just_visited=[]
+                
                 if vertex==target:
                     path.append(vertex)
                     k=path.copy()
