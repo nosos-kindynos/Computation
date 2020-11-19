@@ -94,7 +94,7 @@ def estimate_risk(sources, target, mapping, risk_mapping,accuracy):
     
     
     
-    def find_all_possible_paths(source,target,mapping,accuracy): # Uses depth first search to traverse graph
+    def find_all_possible_paths(source,target,mapping,accuracy): 
         
         paths=[]
         path=[source]
