@@ -34,6 +34,8 @@ Calculate probability from probability mapping by a set intersection of all edge
                     
                     if vertex is target
                         log path to all_possible_paths
+                        log vertex as an exploration of current
+                        
                     else
                         backtrack=False
                         log vertex to path
