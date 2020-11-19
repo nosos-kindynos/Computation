@@ -113,6 +113,7 @@ def estimate_risk(sources, target, mapping, risk_mapping,accuracy):
                     k=path.copy()
                     paths.append(k)
                     path.remove(vertex)
+                    just_visited.append(vertex)
                 elif vertex not in path and vertex not in visited.get(current) and len(path)<accuracy:
                     path.append(vertex)
                     just_visited.append(vertex)
