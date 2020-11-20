@@ -88,9 +88,6 @@ find_all_possible_paths function in the above pseudocode to achieve output in a 
 
 
 
-perosnal notes for find all paths:
-1. reposition break statement in loop
-2. update target in visited when logged in as code might visit target again and reiterate path after backtracing.
-3. restructure
+
 
 
