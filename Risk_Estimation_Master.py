@@ -23,9 +23,17 @@ def estimate_risk(sources, target, mapping, risk_mapping,accuracy):
         paths=[]
         for source in sources:
             relative_mapping = mapping.copy()
-            for other_sources in sources:
-                if other_sources != source:
-                    relative_mapping.pop(other_sources)
+            other_sources=sources.copy()
+            other_sources.remove(source)
+            for other_source in other_sources:
+                relative_mapping.pop(other_source)
+            for vertex in relative_mapping:
+                connections=relative_mapping.get(vertex)
+                for connection in connections:
+                    if connection in other_sources:
+                        connections.remove(connection)
+                relative_mapping.update({vertex:connections})
+                        
             paths.extend(find_all_possible_paths(source, target, mapping,accuracy))
 
         paths=convert_path_to_edges(paths)
