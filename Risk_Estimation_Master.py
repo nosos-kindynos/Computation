@@ -34,7 +34,7 @@ def estimate_risk(sources, target, mapping, risk_mapping,accuracy):
                         connections.remove(connection)
                 relative_mapping.update({vertex:connections})
                         
-            paths.extend(find_all_possible_paths(source, target, relative_mapping,accuracy))
+            paths.extend(find_all_possible_paths(source, target, relativme_mapping,accuracy))
 
         paths=convert_path_to_edges(paths)
 
