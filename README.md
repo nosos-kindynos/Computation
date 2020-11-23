@@ -87,7 +87,7 @@ The probability may be calculated by taking into account not all the paths but t
 find_all_possible_paths function in the above pseudocode to achieve output in a considerable time with limited processing capabilities.
 
 correct relative mapping by removing other sources from first degree mapping of all vertices
-try to find top n dominat paths for considerable output time
+try to find top n dominat paths by ranking paths after finding all possible paths and taking top n paths for considerable output time
 
 
 
