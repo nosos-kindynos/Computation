@@ -5,7 +5,7 @@
     risk_mapping = #  Dictionary with key as edge denoted by tuple of joint nodes and value as risk probability in decimal system #  eg  {(1,2):0.5 , (2,4):0.5 , (3,4): 0.5, (4,5): 0.5, (1,3):0.5 , }   
 '''
 
-
+from functions import *
 
 
 
@@ -60,47 +60,7 @@ def estimate_risk(sources, target, mapping, risk_mapping,accuracy):
         return(sum)
 
     
-    
-    
-    
-    def convert_path_to_edges(paths):
-        path_list=[]
-        for path in paths:
-            vertex_to_vertex=[]
-            for i in range(len(path)-1):
-                vertex_to_vertex.append((path[i],path[i+1]))
-            path_list.append(tuple(vertex_to_vertex))
-        return(path_list)
-
-    
-    
-    
-    
-    def eq(x,y):
-        x = list(x)
-        y = list(y)
-        x.sort()
-        y.sort()
-        if x==y:
-            return(True)
-        else:
-            return(False)
-
    
-    def distinct(x):
-        k = []
-        for i in x:
-            append = True
-            for j in k:
-                if eq(i, j) == True:
-                    append = False
-            if append == True:
-                k.append(i)
-        return(k)
-
-    
-    
-    
     
     def find_all_possible_paths(source,target,mapping,accuracy): 
         
