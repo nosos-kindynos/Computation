@@ -22,7 +22,7 @@ def estimate_risk(sources, target, mapping, risk_mapping,accuracy):
 
         paths=[]
         for source in sources:
-            relative_mapping=relative_map(soure,sources,mapping)
+            relative_mapping=relative_map(source,sources,mapping)
             paths.extend(find_all_possible_paths(source, target, relative_mapping,accuracy))
 
         paths=convert_path_to_edges(paths)
