@@ -75,6 +75,15 @@ Calculate probability from probability mapping by a set intersection of all edge
 
 
              return risk
+             
+         
+         if target is in sources:
+             return (1)
+         else:
+             return calculate_risk (risk_mapping)
+             
+             
+          
 
 
 Time Complexity: summation i from 1 to n ip nci (assumming one cycle to be a primary binary operation)
