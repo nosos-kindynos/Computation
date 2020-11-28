@@ -101,11 +101,10 @@ def estimate_risk(sources, target, mapping, risk_mapping,accuracy):
 
 
     
-    
-    
-    
-    
-    return(calculate_risk(risk_mapping))
+    if target in sources:
+        return(1)
+    else:
+        return(calculate_risk(risk_mapping))
 
 
 
