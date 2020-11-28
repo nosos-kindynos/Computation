@@ -40,11 +40,7 @@ def estimate_risk(sources, target, mapping, risk_mapping,accuracy):
                 d=distinct(d)
                 intersection=1
                 for t in d:
-                    h = risk_mapping.get(t)
-                    if h==None:
-                        intersection *= risk_mapping.get((t[1],t[0]))
-                    else:
-                        intersection *= h
+                    intersection*get_risk(t,risk_mapping)
                 sum+=(sign)*intersection
         return(sum)
 
