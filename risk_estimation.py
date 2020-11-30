@@ -42,7 +42,7 @@ def estimate_risk(sources, target, mapping, risk_mapping,accuracy):
                 for t in d:
                     intersection*=get_risk(t,risk_mapping)
                 sum+=(sign)*intersection
-        return(sum)
+        return([sum,paths])
 
     
    
