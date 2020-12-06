@@ -66,7 +66,7 @@ def dominancy(people,mapping,risk_mapping):
         for edge in path:
             extract_and_insert(edge,centrality,risk)
         total+=risk
-    print(total)
+  
     for i in centrality:
         val=(centrality.get(i))/total
         centrality.update({i:val})
