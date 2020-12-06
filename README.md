@@ -95,8 +95,7 @@ For running in current computers relevant approximations may be needed to achiev
 The probability may be calculated by taking into account not all the paths but the relatively dominant paths ,  which can be ranked on an estimate based on the degree of connection, thus a constraint which holds the backtrack variable True if a path lenth overshoots the input parameter while exploring may be added to the 
 find_all_possible_paths function in the above pseudocode to achieve output in a considerable time with limited processing capabilities.
 
-correct relative mapping by removing other sources from first degree mapping of all vertices
-try to find top n dominat paths by ranking paths after finding all possible paths and taking top n paths for considerable output time
+
 
 
 
