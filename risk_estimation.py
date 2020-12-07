@@ -90,7 +90,7 @@ def estimate_risk_of_target(sources, target, mapping, risk_mapping,accuracy,top)
 
 
 
-def estimate_risk_of_relation_infection_of_social_network(people, mapping, risk_mapping):
+def estimate_risk_of_relation_infection_in_social_network(people, mapping, risk_mapping):
     
     combos = list(combinations(people, 2))
     paths = []
