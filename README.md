@@ -4,6 +4,7 @@
 # Objective:
 
 To find the risk of a node from multiple sources given a probability mapping
+To find dominancy posed by a relation in the mapping 
  
 
 
@@ -14,6 +15,8 @@ To find the risk of a node from multiple sources given a probability mapping
 Find all possible paths between all given source vertices and target vertex in a given mapping by finding all possible paths between one source and target considering a mapping without all the other sources and repeating for all the sources. All possible paths can be found by traversing the mapping by progressing from vertex to vertex and only removing the vertex from the path and backtracking to the previous one, if the vertex has already been visited in the current path, while putting a small constraint that if it happens to come across the target while traversing the mapping, it logs in the current path while treating the target as a visited vertex.
 
 Calculate probability from probability mapping by a set intersection of all edges in a path and then a set union of all induvidual paths from all sources , where the final expression is evaluated treaating the intersection as multiplication.
+
+Calculate each relationship's contribution by finding all possible paths betwen all pairs of vertices in the graph and finding the weight of each path by taking an intersection of all edges in it. For a given edge find all the paths which consist of it and find the sum of the weights of these paths. Repeat for all edges and then divide all values by sum of weights of all paths between all pairs of vertices.
 
 
 
@@ -66,7 +69,7 @@ Calculate probability from probability mapping by a set intersection of all edge
             for i from 1 to (total number of paths) :
 
                 combinations = all i path combinations of paths
-                intersection = summation of the products of transfer chance of all distinct edges
+                intersection = summation of the products of mapped values of all distinct edges from risk_mapping
 
                 if i is odd
                     add intersection to risk
@@ -81,6 +84,26 @@ Calculate probability from probability mapping by a set intersection of all edge
              return (1)
          else:
              return calculate_risk (risk_mapping)
+                       
+             
+    function estimate_contribution_of_edges(people,mapping,risk_mapping):
+        
+        for source,target pair = all possible pairs of vertices from people:
+            log find_all_possible_paths (source,target,mapping) to paths
+            
+        for edge = all possible edges from risk_mapping
+            log mapped value of edge to 0 in contribution
+        
+        for path = all possible paths
+            for edge = all edges in path
+                intersection = product of all mapped values of all edges in path from risk_mapping
+                add intersection of path to mapped value of edge in contribution
+                
+        
+        divide all mapped values of all edges in contribution by sum of intersection of all path in paths
+        
+        return contribution
+                
              
              
           
